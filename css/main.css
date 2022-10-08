@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.content-about p {
+  color: whitesmoke;
+}
+
+.d-flex {
+  justify-content: space-between;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.subheading {
+  color: white;
+  font-size: 24px;
+}
+
+/* section part  */
+.section-about {
+  background-color: #251b37;
+  /*background: url(" ") -67% / contain no-repeat;*/
+}
+
+.section-skill {
+  background-color: #372948;
+  /*background: url(" ") center/cover no-repeat;*/
+}
+
+.section-project {
+  background-color: #ffcaca;
+  /*background: url(" ") center/cover no-repeat;*/
+}
+
+.section-contact {
+  background-color: #ffecef;
+  /*background: url(" ") center/cover no-repeat;*/
+}
+/* end of section part*/
+
+h1 {
+  
+}
+
+/* section about part*/
+
+.content-about {
+  max-width: 800px;
+}
+
+.content-about-title {
+  font-size: 54px;
+  text-align: center;
+  color: #c985f7e8;
+}
+
+p.lead {
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* end of section about part*/
