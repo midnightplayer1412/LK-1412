@@ -9,18 +9,9 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-.content-about p {
-  color: whitesmoke;
-}
-
-.d-flex {
-  justify-content: space-between;
-}
-
 section {
   width: 100%;
   height: 100vh;
-  display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
@@ -31,7 +22,10 @@ section {
   font-size: 24px;
 }
 
-/* section part  */
+
+/* ------- section part ------- */
+
+
 .section-about {
   background-color: #251b37;
   /*background: url(" ") -67% / contain no-repeat;*/
@@ -51,13 +45,16 @@ section {
   background-color: #ffecef;
   /*background: url(" ") center/cover no-repeat;*/
 }
-/* end of section part*/
+
+
+/* ------- end of section part ------- */
+
 
 h1 {
   
 }
 
-/* section about part*/
+/* ------- section about part ------- */
 
 .content-about {
   max-width: 800px;
@@ -69,9 +66,81 @@ h1 {
   color: #c985f7e8;
 }
 
-p.lead {
-  text-align: center;
+.content-about p {
   color: whitesmoke;
 }
 
-/* end of section about part*/
+p.lead {
+  text-align: center;
+  color: peachpuff;
+}
+
+.content-about h3 {
+  color:#ffcaca;
+}
+
+.content-about-details {
+  color: whitesmoke;
+
+}
+
+
+/* ------- end of section about part ------- */
+
+
+/* ------- section skill part ------- */
+
+
+.section-skill {
+  color: white;
+}
+
+.content-skill-title{
+ color: whitesmoke;
+ font-size: 3.5rem;
+ text-align: center;
+}
+
+/* ------- end of section skill part ------- */
+
+/* ------- section project part ------- */
+
+
+.section-project {
+  color: black;
+  background: #ffcaca url("../img/laptop1.png") center/cover no-repeat;
+  background-size: 80%;
+}
+
+.content-project-title{
+ color: #1d1d1d;
+ font-size: 3.5rem;
+ text-align: center;
+}
+
+.content-project {
+  text-align: center;
+  position: relative;
+  left: 21%;
+  top: 20%;
+  width: 57%;
+}
+
+.content-project-1 {
+  position: relative;
+  left: 55%;
+  top: 20%;
+  width: 10%;
+  height: auto;
+
+}
+
+.content-project-2 {
+  position: relative;
+  left: 13%;
+  top: 50%;
+  width: auto;
+  height: auto;
+}
+
+/* ------- end of section project part ------- */
