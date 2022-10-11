@@ -11,6 +11,10 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
@@ -111,47 +115,79 @@
           </div>
         </div>
       </section> -->
-      <section class="section-contact d-flex">
-        <div class="content-contact">
-          <div class="container">
+      <section class="section-contact">
+        <div class="content-contact d-flex">
+          <div class="container pt-5">
             <div class="row">
-              <div class="col">
-                <div>Contact Form</div>
-                <div>
-                  <form
-                    action="mailto:info@w3docs.com"
-                    method="get"
-                    enctype="text/plain"
-                  >
-                    <input
-                      type="text"
-                      name="Name"
-                      id="name"
-                      placeholder="Name"
-                      class="form-control mt-3"
-                    />
-                    <input
-                      type="email"
-                      name="Email"
-                      id="email"
-                      placeholder="Email"
-                      class="form-control mt-3"
-                    />
-                    <textarea
-                      name="contact"
-                      id="contact"
-                      cols="30"
-                      rows="10"
-                      placeholder="Message to Me"
-                      class="form-control mt-3"
-                    ></textarea>
-                    <input type="submit" value="Submit" name="submit" />
-                    <input type="reset" value="Reset Form" name="reset" />
-                  </form>
+              <div class="col-xl-8">
+                <div class="container p-3">
+                  <div class="h3">Contact Form</div>
+                  <div>
+                    <form action="mailto:#" method="get" enctype="text/plain">
+                      <input
+                        type="text"
+                        name="Name"
+                        id="name"
+                        placeholder="Name"
+                        class="form-control mt-3"
+                      />
+                      <input
+                        type="email"
+                        name="Email"
+                        id="email"
+                        placeholder="Email"
+                        class="form-control mt-3"
+                      />
+                      <textarea
+                        name="contact"
+                        id="contact"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message to Me"
+                        class="form-control mt-3"
+                      ></textarea>
+                      <input
+                        type="submit"
+                        value="Submit"
+                        name="submit"
+                        class="mt-3 btn btn-primary"
+                      />
+                      <input
+                        type="reset"
+                        value="Reset Form"
+                        name="reset"
+                        class="mt-3 btn btn-secondary"
+                      />
+                    </form>
+                  </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div>Get in Touch</div>
+              <div class="col-xl-4">
+                <div class="container p-3">
+                  <div class="h3">Get in Touch</div>
+                  <br />
+                  <div class="icon d-flex flex-column">
+                    <a
+                      href="https://github.com/midnightplayer1412"
+                      target="_blank"
+                      class="icon-link"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <br />
+                    <a
+                      href="mailto:ponyuxuan13@gmail.com"
+                      target="_blank"
+                      class="icon-link"
+                    >
+                      <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <br />
+                    <a href="#" target="_blank" class="icon-link">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -166,34 +202,27 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
   ></script>
-
-  <?php
+	
+	
+<?php
 if(isset($_POST['emailbtn'])){
 	$to_email = $_POST['getEmail'];
-	$subject = "Reset Password for Sweet Bakery Shop Website";
-	$body = "Hi,
+	$subject = "#";
+	$body = "#";
 
-	There was a request to change your password!
-
-	If you did not make this request then please ignore this email.
-
-	Otherwise, please click this link to change your password: 
-	
-	[C:\xampp\htdocs\FYP_latest\reset-password.php]";
-
-	$headers = "From: fyp.sweetbakeryshop@gmail.com";
+	$headers = "From: #";
 
 	 
 	if (mail($to_email, $subject, $body, $headers)) {
 		echo "<script type='text/javascript'>
 			  	alert('Email successfully sent to ".$to_email." ... ');
 			  </script>";
-		echo "<script type='text/javascript'> document.location = 'login_page.php'; </script>";
+// 		echo "<script type='text/javascript'> document.location = 'login_page.php'; </script>";
 	} else {
 		echo "<script type='text/javascript'>
 			  	alert('Email sending failed...');
 			  </script>";
-		echo "<script type='text/javascript'> document.location = 'login_page.php'; </script>";	  
+// 		echo "<script type='text/javascript'> document.location = 'login_page.php'; </script>";	  
 	}
 }
 ?>
