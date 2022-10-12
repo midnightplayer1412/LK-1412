@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
@@ -123,29 +125,45 @@
                 <div class="container p-3">
                   <div class="h3">Contact Form</div>
                   <div>
-                    <form action="mailto:#" method="get" enctype="text/plain">
+                    <form
+                      action="https://formsubmit.co/82b490d024ce0156900d1dac9e18525e"
+                      method="POST"
+                      enctype="text/plain"
+                    >
+                      <input type="hidden" name="_captcha" value="false" />
+                      <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Message from Porfolio!"
+                      />
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="https://midnightplayer1412.github.io/LK-1412/"
+                      />
                       <input
                         type="text"
-                        name="Name"
-                        id="name"
+                        name="name"
                         placeholder="Name"
                         class="form-control mt-3"
+                        required
                       />
                       <input
                         type="email"
-                        name="Email"
-                        id="email"
+                        name="email"
                         placeholder="Email"
                         class="form-control mt-3"
+                        required
                       />
                       <textarea
-                        name="contact"
-                        id="contact"
-                        cols="30"
-                        rows="10"
-                        placeholder="Message to Me"
+                        name="message"
+                        cols="40"
+                        rows="5"
+                        placeholder="Message"
                         class="form-control mt-3"
+                        required
                       ></textarea>
+
                       <input
                         type="submit"
                         value="Submit"
