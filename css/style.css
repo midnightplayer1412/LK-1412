@@ -1,0 +1,154 @@
+@font-face { font-family: AgencyFBR; src: url('../assets/AGENCYR.TTF'); } 
+@font-face { font-family: AgencyFBB; font-weight: bold; src: url('../assets/AGENCYB.TTF');}
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+/* --Navigation-- */
+.navigation {
+  color: white;
+  background-color: #252525;
+  height: 56px;
+}
+.navigation ul {
+  list-style: none;
+  width: 40%;
+}
+.navigation ul li {
+  position: relative;
+  left: 140%;
+  list-style: none;
+  margin-left: 67px;
+  margin-top: 18px;
+}
+/* --End Navigation-- */
+.content {
+  font-family: AgencyFBR; 
+  color: black;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.home {
+  background-color: #251b37;
+}
+
+.about {
+  background-color: #251b37;
+  color: white;
+}
+
+.skill {
+  background-color: #372948;
+  color:white;
+}
+
+.project {
+  color:black;
+  background: #ffcaca url("../img/laptop1.png") center/cover no-repeat;
+  background-size: 78%;
+}
+
+.contact {
+  background-color: #ffecef;
+  color:black;
+}
+
+.content-home {
+  color:white;
+  font-size: 1.5rem;
+}
+
+
+/* --Section About-- */
+.content-about {
+  color:white;
+  font-size: 1.5rem;
+  font-family: AgencyFBR;
+}
+.content-about-title {
+  font-family: AgencyFBB;
+  font-size: 2.5rem;
+}
+.content-about-details {
+  color: whitesmoke;
+}
+/* --End Section About-- */
+
+/* --Section Skill-- */
+.content-skill {
+  color:white;
+  font-size: 1.5rem;
+  font-family: AgencyFBR;
+}
+.content-skill-title {
+  font-family: AgencyFBB;
+  font-size: 2.5rem;
+}
+/* --End Section Skill-- */
+
+/* --Section Project-- */
+.content-project {
+  color:black;
+  font-size: 1.5rem;
+  font-family: AgencyFBR;
+}
+.content-project-title {
+  font-family: AgencyFBB;
+  font-size: 2.5rem;
+}
+/* --End Section Project-- */
+
+/* --Section Contact-- */
+.content-contact {
+  color:black;
+  font-size: 1.5rem;
+  font-family: AgencyFBR;
+}
+.content-contact-title {
+  font-family: AgencyFBB;
+  font-size: 2.5rem;
+}
+.content-contact-form {
+  width: 700px;
+  height: auto;
+}
+.content-contact-link {
+  width: 350px;
+  margin: 5%;
+}
+/* --End Section Contact-- */
